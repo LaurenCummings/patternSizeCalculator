@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="patternSize">
 	<head>
-
+		<script type="text/javascript" src="lib/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 
-	<body>
+	<body ng-cloak>
 		<form ng-controller="FormController as formCtrl">
 			<fieldset class="form-group">
 				<p>Pattern Size: </p>
-				<input ng-model="formCtrl.patternWidth" />
+				<input ng-model="patternWidth" />
 				<p>stitches wide by</p>
-				<input ng-model="formCtrl.patternHeight" />
+				<input ng-model="patternHeight" />
 				<p>stitches high</p>
 			</fieldset>
 			<fieldset class="form-group">
 				<p>Fabric Size</p>
-				<input ng-model="formCtrl.fabricSize" />
+				<input ng-model="fabricSize" />
 				<p>threads per inch</p>
 			</fieldset>
-			<p>The food is {{spice}} spicy!</p>
-			<button ng-click="chiliSpicy()">Calculate</button>
+
+			<button ng-click="calculateSize()">Calculate</button>
+
+			<fieldset class="form-group">
+				<p>Stiched Size:</p>
+
+				<p>{{ width }} inches wide by</p>
+
+				<p>{{ height }} inches high</p>
+			</fieldset>
 		</form>
 
-		<script type="text/javascript" src="lib/angular.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 
 </html>
