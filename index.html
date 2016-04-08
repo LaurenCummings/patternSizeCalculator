@@ -10,14 +10,14 @@
 		<form ng-controller="FormController as formCtrl">
 			<h1>Cross Stitch Pattern Calculator</h1>
 			<fieldset class="form-group">
-				<h2>Pattern Size: </h2>
-				<input ng-model="patternWidth" />
+				<h2>Pattern Size:</h2>
+				<input ng-model="patternWidth" placeholder="0" />
 				<p>stitches wide by</p>
-				<input ng-model="patternHeight" />
+				<input ng-model="patternHeight" placeholder="0" />
 				<p>stitches high</p>
 			</fieldset>
 			<fieldset class="form-group">
-				<h2>Fabric Size</h2>
+				<h2>Fabric Size:</h2>
 				<input ng-model="fabricSize" />
 				<p>threads per inch</p>
 			</fieldset>
@@ -27,9 +27,13 @@
 			<fieldset class="form-group">
 				<p>Stiched Size:</p>
 
-				<p>{{ width }} inches wide by</p>
+				<p id="width">{{ width }}</p>
 
-				<p>{{ height }} inches high</p>
+				<p>inches wide by </p>
+
+				<p id="height">{{ height }}</p>
+
+				<p>inches high</p>
 			</fieldset>
 		</form>
 

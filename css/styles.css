@@ -26,5 +26,16 @@ h1 {
 
 button {
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto;
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	border-radius: 5%;
+}
+
+#width, #height {
+	padding-left: 2px;
+	padding-right: 2px;
+	font-weight: bold;
+	color: red;
 }
