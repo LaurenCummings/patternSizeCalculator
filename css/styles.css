@@ -1,0 +1,30 @@
+input {
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	float: left;
+	vertical-align: baseline;
+	margin-top: 8px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+p {
+	float: left;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+form {
+	width: 330px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+}
