@@ -7,12 +7,14 @@ input {
 	margin-top: 8px;
 	margin-left: 3px;
 	margin-right: 3px;
+	clear: left;
 }
 
 p {
 	float: left;
 	display: inline-block;
 	vertical-align: baseline;
+	clear: right;
 }
 
 form {
@@ -38,4 +40,9 @@ button {
 	padding-right: 2px;
 	font-weight: bold;
 	color: red;
+}
+
+#warning {
+	text-align: center;
+	clear: right;
 }

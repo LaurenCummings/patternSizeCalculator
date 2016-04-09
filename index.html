@@ -10,7 +10,9 @@
 		<form ng-controller="FormController as formCtrl">
 			<h1>Cross Stitch Pattern Calculator</h1>
 			<fieldset class="form-group">
+				
 				<h2>Pattern Size:</h2>
+				<p id="warning" ng-show="warnUser">Pattern size cannot be 0</p>
 				<input ng-model="patternWidth" placeholder="0" />
 				<p>stitches wide by</p>
 				<input ng-model="patternHeight" placeholder="0" />

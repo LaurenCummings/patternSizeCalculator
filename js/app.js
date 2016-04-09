@@ -7,9 +7,13 @@
 		$scope.fabricSize = 16;
 
 		$scope.calculateSize = function() {
-			if($scope.patternWidth > 0 && $scope.patternHeight > 0){
+			if($scope.patternWidth > 0 && $scope.patternHeight > 0) {
 				$scope.width = $scope.patternWidth / $scope.fabricSize;
 				$scope.height = $scope.patternHeight / $scope.fabricSize;
+			}
+			else if(!($scope.patternWidth > 0) || (!($scope.patternHeight > 0))) {
+				$scope.warnUser = true;
+
 			}
 		};
 
