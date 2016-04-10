@@ -43,6 +43,21 @@ button {
 }
 
 #warning {
+	background-color: red;
+	color: black;
+	font-weight: bold;
+	padding: 5px;
+	margin: 0px;
+	width: 100%;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
 	text-align: center;
 	clear: right;
+	opacity: 1;
+	transition: all linear 1s;
+
+}
+
+#warning.ng-hide {
+	opacity: 0;
 }

@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('patternSize', []);
+	var app = angular.module('patternSize', ['ngAnimate']);
 
 	app.controller('FormController', ['$scope', function($scope){
 		$scope.width = 0;
