@@ -10,8 +10,7 @@
 	<body ng-cloak>
 		<form ng-controller="FormController as formCtrl">
 			<h1>Cross Stitch Pattern Calculator</h1>
-			<fieldset class="form-group">
-				
+			<fieldset class="form-group" id="pattern_size">			
 				<h2>Pattern Size:</h2>
 				<p id="warning" ng-show="warnUser">PATTERN SIZE MUST BE GREATER THAN 0</p>
 				<input ng-model="patternWidth" placeholder="0" />
@@ -19,7 +18,7 @@
 				<input ng-model="patternHeight" placeholder="0" />
 				<p>stitches high</p>
 			</fieldset>
-			<fieldset class="form-group">
+			<fieldset class="form-group" id="fabric_size">
 				<h2>Fabric Size:</h2>
 				<input ng-model="fabricSize" />
 				<p>threads per inch</p>
@@ -27,8 +26,8 @@
 
 			<button ng-click="calculateSize()">Calculate</button>
 
-			<fieldset class="form-group">
-				<p>Stiched Size:</p>
+			<fieldset class="form-group" id="stitched_size">
+				<h2>Stiched Size:</h2>
 
 				<p id="width">{{ width }}</p>
 

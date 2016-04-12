@@ -18,12 +18,16 @@ p {
 }
 
 form {
-	width: 330px;
+	width: 400px;
 	margin: 0 auto;
 }
 
 h1 {
 	text-align: center;
+}
+
+h2 {
+	margin: 2px auto;
 }
 
 button {
@@ -61,3 +65,8 @@ button {
 #warning.ng-hide {
 	opacity: 0;
 }
+
+#pattern_size, #fabric_size {
+	float: left;
+}
+
