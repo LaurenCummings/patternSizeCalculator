@@ -32,12 +32,34 @@ h2 {
 
 button {
 	display: block;
-	margin: auto;
 	height: 50px;
-	width: 100px;
+	width: 120px;
 	font-size: 20px;
-	border-radius: 5%;
+	border-radius: 40px;
+	color: black;
+	border: none;
 	cursor: pointer;
+	display: inline-block;
+	margin: 8px 30px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	background: #cb4e4e;
+	box-shadow: 0 6px #ab3c3c;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+button:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
 }
 
 #width, #height {
