@@ -12,7 +12,6 @@
 			<h1>Cross Stitch Pattern Calculator</h1>
 			<fieldset class="form-group" id="pattern_size">			
 				<h2>Pattern Size:</h2>
-				<p id="warning" ng-show="warnUser">PATTERN SIZE MUST BE GREATER THAN 0</p>
 				<input ng-model="patternWidth" placeholder="0" />
 				<p>stitches wide by</p>
 				<input ng-model="patternHeight" placeholder="0" />
@@ -25,7 +24,7 @@
 			</fieldset>
 
 			<button ng-click="calculateSize()">Calculate</button>
-
+			<p id="warning" ng-show="warnUser">PATTERN SIZE MUST BE GREATER THAN 0</p>
 			<fieldset class="form-group" id="stitched_size">
 				<h2>Stiched Size:</h2>
 

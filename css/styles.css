@@ -18,7 +18,7 @@ p {
 }
 
 form {
-	width: 400px;
+	width: 370px;
 	margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ h2 {
 
 button {
 	display: block;
-	margin: 10px auto;
+	margin: auto;
 	height: 50px;
 	width: 100px;
 	font-size: 20px;
@@ -70,3 +70,8 @@ button {
 	float: left;
 }
 
+
+#stitched_size {
+	background-color: rgba(210, 202, 202, 0.65);
+	border-top: black solid 6px;
+}
