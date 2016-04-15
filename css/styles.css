@@ -19,11 +19,15 @@ p {
 
 form {
 	width: 370px;
+	height: 400px;
 	margin: 0 auto;
+	background-color: #51068F;
+	border-radius: 5%;
 }
 
 h1 {
 	text-align: center;
+	color: white;
 }
 
 h2 {
@@ -92,11 +96,12 @@ button:active {
 #pattern_size, #fabric_size {
 	float: left;
 	cursor: default;
+	background-color: #AE6CE3;
 }
 
 
 #stitched_size {
-	background-color: rgba(210, 202, 202, 0.65);
+	background-color: #7108C7;
 	border-top: black solid 6px;
 	cursor: default;
 }
